@@ -1,0 +1,5 @@
+***UDM models that failed to compile***
+***
+UDM models that sucessfully compiled***
+C:\ETAP 1901\ieee_13\Gen2_EXC_AC1C.udm compiled sucessfully
+C:\ETAP 1901\ieee_13\Gen2_EXC_half_fault.udm compiled sucessfully

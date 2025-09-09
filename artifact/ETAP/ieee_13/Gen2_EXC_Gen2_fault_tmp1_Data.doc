@@ -1,0 +1,251 @@
+
+============================ UDM Parameter Report ============================
+
+	 UDM Type:    C:\ETAP 1901\ieee_13\Gen2_EXC_Gen2_fault_tmp1.udm
+
+	 UDM File:    C:\ETAP 1901\ieee_13\Gen2_EXC_Gen2_fault_tmp1.bin
+
+	 Report Data: Monday, November 04, 2024
+
+==============================================================================
+
+Block 1  Name: Vref
+Block    Type: Constant
+Voltage Reference:  Vref
+
+Block 2  Name: Vs
+Block    Type: Inport
+Input:         PSS Signal Vs
+
+Block 3  Name: VUEL_B
+
+Block    Type: In
+Variable Name:      018d15da-50dd-4a1e-9214-48218b3687d8,Input,Internal,VUEL_B
+
+Initial Value:      -9999
+
+Block 4  Name: VSCLUEL_B
+
+Block    Type: In
+Variable Name:      018d15da-50dd-4a1e-9214-48218b3687d8,Input,Internal,VSCLUEL_B
+
+Initial Value:      -9999
+
+Block 5  Name: C1
+Block    Type: Constant
+Constant Value: VUEL_B
+
+Block 6  Name: C2
+Block    Type: Constant
+Constant Value: VSCLSUM_A
+
+Block 7  Name: VUEL_A
+
+Block    Type: In
+Variable Name:      018d15da-50dd-4a1e-9214-48218b3687d8,Input,Internal,VUEL_A
+
+Initial Value:      0
+
+Block 8  Name: VOEL_A
+
+Block    Type: In
+Variable Name:      018d15da-50dd-4a1e-9214-48218b3687d8,Input,Internal,VOEL_A
+
+Initial Value:      0
+
+Block 9  Name: VSCLSUM_A
+
+Block    Type: In
+Variable Name:      018d15da-50dd-4a1e-9214-48218b3687d8,Input,Internal,VSCLSUM_A
+
+Initial Value:      0
+
+Block 10  Name: C3
+Block    Type: Constant
+Constant Value: VUEL_A
+
+Block 11  Name: C4
+Block    Type: Constant
+Constant Value: VOEL_A
+
+Block 12  Name: C6
+Block    Type: Constant
+Constant Value: VSCLUEL_B
+
+Block 13  Name: Rc
+Block    Type: Constant
+Constant Value: Rc
+
+Block 14  Name: CIt
+Block    Type: Inport
+Input:         Complex Terminal Current CIt
+
+Block 15  Name: Xc
+Block    Type: Constant
+Constant Value: Xc
+
+Block 16  Name: CVt
+Block    Type: Inport
+Input:         Complex Terminal Voltage CVt
+
+var Sharing Group #: 0
+
+Block 17  Name: MachineBaseMVA
+Block    Type: Constant
+Constant Value: MachineBaseMVA
+
+Block 18  Name: SaturationFunction
+
+Block    Type: Script
+Block 19  Name: Upper Limit3
+Block    Type: Constant
+Constant Value: VRMAX
+
+Block 20  Name: Lower Limit3
+Block    Type: Constant
+Constant Value: VRMIN
+
+Block 21  Name: Constant3
+Block    Type: Constant
+Constant Value: TA
+
+Block 22  Name: Constant4
+Block    Type: Constant
+Constant Value: EFDmax
+
+Block 23  Name: Constant5
+Block    Type: Constant
+Constant Value: EFDmin
+
+Block 24  Name: Constant7
+Block    Type: Constant
+Constant Value: TE
+
+Block 25  Name: Gain
+Block    Type: Gain
+Parameters:    0.4
+
+Block 26  Name: CR1
+Block    Type: ComplexToRealImag
+
+Block 27  Name: CR2
+Block    Type: ComplexToRealImag
+
+Block 28  Name: LVHV Gate
+Block    Type: MinMax
+Function:      Max
+
+Block 29  Name: Switch
+Block      Type: Switch
+Threshold Value: 0
+
+Block 30  Name: Gain1
+Block    Type: Gain
+Parameters:    KA
+
+Block 31  Name: LoadCurrentCompensator
+
+Block    Type: Script
+Block 32  Name: Nonwindup1
+
+Block    Type: Script
+Block 33  Name: VoltageTransducer
+Block    Type: TransferFcn
+Parameters:    
+Numerator:     0, 0, 0, 1
+Denominator:   0, 0, TR, 1
+
+Block 34  Name: Integrator1
+Block    Type: Integrator
+Parameters:    
+Upper Limit:   VRMAX
+Lower Limit:   VRMIN
+
+Block 35  Name: Sum2
+Block    Type: Sum
+Port 1 Sign:   Plus
+Port 2 Sign:   Minus
+
+Block 36  Name: Script1
+
+Block    Type: Script
+Block 37  Name: Sum
+Block    Type: Sum
+Port 1 Sign:   Plus
+Port 2 Sign:   Minus
+Port 3 Sign:   Plus
+Port 4 Sign:   Plus
+Port 5 Sign:   Plus
+Port 6 Sign:   Plus
+
+Block 38  Name: IntBlockType1
+
+Block    Type: Script
+Block 39  Name: Gain2
+Block    Type: Gain
+Parameters:    KE
+
+Block 40  Name: Stabilizer Feedback
+Block    Type: TransferFcn
+Parameters:    
+Numerator:     0, 0, KF, 0
+Denominator:   0, 0, TF, 1
+
+Block 41  Name: Sum1
+Block    Type: Sum
+Port 1 Sign:   Plus
+Port 2 Sign:   Minus
+
+Block 42  Name: Out
+
+Block    Type: Out
+Block 43  Name: Out1
+
+Block    Type: Out
+Block 44  Name: Out2
+
+Block    Type: Out
+Block 45  Name: Out3
+
+Block    Type: Out
+Block 46  Name: Out5
+
+Block    Type: Out
+Block 47  Name: Efd
+Block    Type: Outport
+Output:        Exciter Voltage Efd
+
+Block 48  Name: Sum4
+Block    Type: Sum
+Port 1 Sign:   Plus
+Port 2 Sign:   Plus
+
+Block 49  Name: Transfer Function
+Block    Type: TransferFcn
+Parameters:    
+Numerator:     0, 0, TC, 1
+Denominator:   0, 0, TB, 1
+
+Parameters:    
+Xc = 0
+Rc = 0
+TR = 0
+VUEL_B = -9999
+VUEL_A = 0
+VOEL_A = 0
+VSCLSUM_A = 0
+VSCLUEL_B = -9999
+VRMAX = 1
+VRMIN = -0.9
+TB = 0
+TA = 0.06
+KA = 46
+TC = 0
+TE = 0.46
+KE = 0.05
+TF = 1
+KF = 0.1
+MachineBaseMVA = 141
+EFDmin = 0
+EFDmax = 9999
+

@@ -1,0 +1,8 @@
+***
+* Complementary Buffer With Deadtime
+***
+.subckt ComplementaryBufferWithDeadtime I P N Va=5V Tdead=1u
+B1 0 P i={(idt(1,0,inv(V(I)))>=Tdead)*Va} tripdt={tripdt} Rpar=1 Cpar=10n
+B2 0 N i={(idt(1,0,buf(V(I)))>=Tdead)*Va} tripdt={tripdt} Rpar=1 Cpar=10n
+.param  tripdt={1*Tdead}
+.ends ComplementaryBufferWithDeadtime

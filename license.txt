@@ -1,0 +1,5 @@
+License: MIT License
+URL: https://opensource.org/licenses/MIT
+
+Note: This license applies only to the artifact files (models, scripts, documentation).
+It does not apply to LTspice, MATLAB/Simulink, or ETAP, which are separate third-party tools with their own licenses.

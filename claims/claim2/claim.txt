@@ -1,0 +1,7 @@
+Claim 2: System-level degradation in Simulink
+
+Paper Reference: Section 7.1  
+Description:  
+Running the MATLAB Simulink model `artifact/Simulink/PV_MPPT_DesktopSim.slx` reproduces system-level solar inverter degradation under ERM-triggered attacks.  
+Expected Behavior:  
+  - Observe DC bus voltage collapse and reduced AC output efficiency.

@@ -1,0 +1,332 @@
+
+============================ UDM Parameter Report ============================
+
+	 UDM Type:    C:\ETAP 1901\ieee_13\Gen2_EXC_AC1C.udm
+
+	 UDM File:    C:\ETAP 1901\ieee_13\Gen2_EXC_AC1C.bin
+
+	 Report Data: Monday, November 04, 2024
+
+==============================================================================
+
+Block 1  Name: C1
+Block    Type: Constant
+Constant Value: VUEL_B
+
+Block 2  Name: C2
+Block    Type: Constant
+Constant Value: VSCLSUM_A
+
+Block 3  Name: C3
+Block    Type: Constant
+Constant Value: VUEL_A
+
+Block 4  Name: C4
+Block    Type: Constant
+Constant Value: VOEL_A
+
+Block 5  Name: C5
+Block    Type: Constant
+Constant Value: VOEL_B
+
+Block 6  Name: C6
+Block    Type: Constant
+Constant Value: VSCLUEL_B
+
+Block 7  Name: C7
+Block    Type: Constant
+Constant Value: VSCLOEL_B
+
+Block 8  Name: Stability Feedback
+Block    Type: TransferFcn
+Parameters:    
+Numerator:     0, 0, KF, 0
+Denominator:   0, 0, TF, 1
+
+Block 9  Name: Vref
+Block    Type: Constant
+Voltage Reference:  Vref
+
+Block 10  Name: Vs
+Block    Type: Inport
+Input:         PSS Signal Vs
+
+Block 11  Name: VUEL_A
+
+Block    Type: In
+Variable Name:      c28e54f3-a2a0-47a2-b277-a8fd9bb42fdf,Input,Internal,VUEL_A
+
+Initial Value:      0
+
+Block 12  Name: VOEL_A
+
+Block    Type: In
+Variable Name:      c28e54f3-a2a0-47a2-b277-a8fd9bb42fdf,Input,Internal,VOEL_A
+
+Initial Value:      0
+
+Block 13  Name: VSCLSUM_A
+
+Block    Type: In
+Variable Name:      c28e54f3-a2a0-47a2-b277-a8fd9bb42fdf,Input,Internal,VSCLSUM_A
+
+Initial Value:      0
+
+Block 14  Name: VUEL_B
+
+Block    Type: In
+Variable Name:      c28e54f3-a2a0-47a2-b277-a8fd9bb42fdf,Input,Internal,VUEL_B
+
+Initial Value:      -9999
+
+Block 15  Name: VSCLUEL_B
+
+Block    Type: In
+Variable Name:      c28e54f3-a2a0-47a2-b277-a8fd9bb42fdf,Input,Internal,VSCLUEL_B
+
+Initial Value:      -9999
+
+Block 16  Name: VOEL_B
+
+Block    Type: In
+Variable Name:      c28e54f3-a2a0-47a2-b277-a8fd9bb42fdf,Input,Internal,VOEL_B
+
+Initial Value:      9999
+
+Block 17  Name: VSCLOEL_B
+
+Block    Type: In
+Variable Name:      c28e54f3-a2a0-47a2-b277-a8fd9bb42fdf,Input,Internal,VSCLOEL_B
+
+Initial Value:      9999
+
+Block 18  Name: Rc
+Block    Type: Constant
+Constant Value: Rc
+
+Block 19  Name: CIt
+Block    Type: Inport
+Input:         Complex Terminal Current CIt
+
+Block 20  Name: Xc
+Block    Type: Constant
+Constant Value: Xc
+
+Block 21  Name: CVt
+Block    Type: Inport
+Input:         Complex Terminal Voltage CVt
+
+var Sharing Group #: 0
+
+Block 22  Name: MachineBaseMVA
+Block    Type: Constant
+Constant Value: MachineBaseMVA
+
+Block 23  Name: Ifd
+Block    Type: Inport
+Input:         Field Winding Current Ifd
+
+Block 24  Name: Upper Limit3
+Block    Type: Constant
+Constant Value: VAmax
+
+Block 25  Name: Lower Limit3
+Block    Type: Constant
+Constant Value: VAmin
+
+Block 26  Name: Constant3
+Block    Type: Constant
+Constant Value: TA
+
+Block 27  Name: Constant1
+Block    Type: Constant
+Constant Value: TE
+
+Block 28  Name: Constant11
+Block    Type: Constant
+Constant Value: VEmin
+
+Block 29  Name: Constant
+Block    Type: Constant
+Constant Value: VFEmax
+
+Block 30  Name: From VEmax
+
+Block    Type: In
+Variable Name:      c28e54f3-a2a0-47a2-b277-a8fd9bb42fdf,Input,Internal,UL1
+
+Initial Value:      9999
+
+Block 31  Name: SaturationFunction
+
+Block    Type: Script
+Block 32  Name: Constant13
+Block    Type: Constant
+Constant Value: KE
+
+Block 33  Name: KC
+Block    Type: Gain
+Parameters:    KC
+
+Block 34  Name: KD
+Block    Type: Gain
+Parameters:    KD
+
+Block 35  Name: CR1
+Block    Type: ComplexToRealImag
+
+Block 36  Name: CR2
+Block    Type: ComplexToRealImag
+
+Block 37  Name: IN
+Block    Type: Product
+Port 1 Symbol: Division
+Port 2 Symbol: Product
+
+Block 38  Name: FEX
+
+Block    Type: Script
+Block 39  Name: MultDiv5
+Block    Type: Product
+Port 1 Symbol: Product
+Port 2 Symbol: Product
+
+Block 40  Name: VEmax
+
+Block    Type: Fcn2
+Function:      (u1-u3)/(u2+u)
+
+Block 41  Name: LoadCurrentCompensator
+
+Block    Type: Script
+Block 42  Name: VoltageTransducer
+Block    Type: TransferFcn
+Parameters:    
+Numerator:     0, 0, 0, 1
+Denominator:   0, 0, TR, 1
+
+Block 43  Name: Sum
+Block    Type: Sum
+Port 1 Sign:   Plus
+Port 2 Sign:   Minus
+Port 3 Sign:   Plus
+Port 4 Sign:   Plus
+Port 5 Sign:   Plus
+Port 6 Sign:   Plus
+
+Block 44  Name: Sum1
+Block    Type: Sum
+Port 1 Sign:   Plus
+Port 2 Sign:   Minus
+
+Block 45  Name: Lead-Lag
+Block    Type: TransferFcn
+Parameters:    
+Numerator:     0, 0, TC, 1
+Denominator:   0, 0, TB, 1
+
+Block 46  Name: Gain1
+Block    Type: Gain
+Parameters:    KA
+
+Block 47  Name: Nonwindup1
+
+Block    Type: Script
+Block 48  Name: Integrator3
+Block    Type: Integrator
+Parameters:    
+Upper Limit:   VAmax
+Lower Limit:   VAmin
+
+Block 49  Name: LVHV Gate
+Block    Type: MinMax
+Function:      Max
+
+Block 50  Name: LVHV Gate1
+Block    Type: MinMax
+Function:      Min
+
+Block 51  Name: Saturation
+Block    Type: Saturate
+Parameters:    
+Upper Limit:   EFEmax
+Lower Limit:   EFEmin
+
+Block 52  Name: Sum2
+Block    Type: Sum
+Port 1 Sign:   Plus
+Port 2 Sign:   Minus
+
+Block 53  Name: Script2
+
+Block    Type: Script
+Block 54  Name: IntBlockType3
+
+Block    Type: Script
+Block 55  Name: Gain2
+Block    Type: Gain
+Parameters:    KE
+
+Block 56  Name: Out
+
+Block    Type: Out
+Block 57  Name: Out1
+
+Block    Type: Out
+Block 58  Name: Out2
+
+Block    Type: Out
+Block 59  Name: Out3
+
+Block    Type: Out
+Block 60  Name: Out4
+
+Block    Type: Out
+Block 61  Name: Out5
+
+Block    Type: Out
+Block 62  Name: Out6
+
+Block    Type: Out
+Block 63  Name: Efd
+Block    Type: Outport
+Output:        Exciter Voltage Efd
+
+Block 64  Name: To VEmax
+
+Block    Type: Out
+Block 65  Name: Sum8
+Block    Type: Sum
+Port 1 Sign:   Plus
+Port 2 Sign:   Plus
+Port 3 Sign:   Plus
+
+Parameters:    
+Xc = 0
+Rc = 0
+TR = 0
+VUEL_B = -9999
+VSCLSUM_A = 0
+VUEL_A = 0
+VOEL_A = 0
+VOEL_B = 9999
+VSCLUEL_B = -9999
+VSCLOEL_B = 9999
+TE = 0.8
+KA = 400
+TA = 0.02
+KE = 1
+KF = 0.03
+TF = 1
+KC = 0.2
+VAmin = -14.5
+VAmax = 14.5
+TC = 0
+TB = 0
+KD = 0.38
+EFEmax = 6.03
+EFEmin = -5.43
+VFEmax = 999
+VEmin = 0
+MachineBaseMVA = 141
+

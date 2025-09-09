@@ -1,0 +1,7 @@
+Claim 3: Grid-level cascading instability in ETAP
+
+Paper Reference: Section 7.3  
+Description:  
+Running the ETAP project `artifact/ETAP/ieee_13/ieee_13.OTI` reproduces cascading instabilities in the IEEE 13-bus system triggered by a compromised 100 kW inverter.  
+Expected Behavior:  
+  - Voltage instability and synchronization failures leading to blackout scenarios.

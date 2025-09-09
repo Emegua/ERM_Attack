@@ -1,0 +1,14 @@
+# Infrastructure Constraints for Artifact Evaluation
+
+This artifact cannot be run on public testbeds (e.g., Chameleon, CloudLab, Colab, etc.) due to:
+
+1. **GUI Requirements**
+   - LTspice, MATLAB/Simulink, and ETAP require interactive GUI execution to load and run models.
+   - No command-line or headless automation interfaces are available for these tools.
+
+2. **Licensing Restrictions**
+   - LTspice XVII is freely available in most countries (download from Analog Devices).
+   - MATLAB/Simulink requires a commercial license, but most universities provide site-wide access.
+   - ETAP requires a commercial license and cannot be redistributed.
+
+Because of these restrictions, claims must be reproduced locally with installed software.

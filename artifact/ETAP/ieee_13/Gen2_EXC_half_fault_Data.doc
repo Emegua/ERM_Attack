@@ -1,0 +1,41 @@
+
+============================ UDM Parameter Report ============================
+
+	 UDM Type:    C:\ETAP 1901\ieee_13\Gen2_EXC_half_fault.udm
+
+	 UDM File:    C:\ETAP 1901\ieee_13\Gen2_EXC_half_fault.bin
+
+	 Report Data: Monday, November 04, 2024
+
+==============================================================================
+
+Block 1  Name: In
+
+Block    Type: In
+Variable Name:      55bb937f-a09f-44ef-b081-50929337818b,Input,Internal,
+
+Initial Value:      0
+
+Block 2  Name: Gain
+Block    Type: Gain
+Parameters:    0.5
+
+Block 3  Name: Constant
+Block    Type: Constant
+Constant Value: 1
+
+Block 4  Name: Function
+
+Block    Type: Fcn
+Function:      sin(2*60*3.141592*u)
+
+Block 5  Name: Switch
+Block      Type: Switch
+Threshold Value: 0
+
+Block 6  Name: Out
+
+Block    Type: Out
+Parameters:    
+Var0 = 0
+

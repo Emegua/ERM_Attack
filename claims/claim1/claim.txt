@@ -1,0 +1,7 @@
+Claim 1: Circuit-level inverter disruption in LTspice
+
+Paper Reference: Section 6.3.1  
+Description:  
+Running the LTspice XVII model `artifact/LTspice/DC-AC.asc` reproduces the circuit-level inverter disruptions caused by the ERM-triggered Trojan.  
+Expected Behavior:  
+  - Observe voltage degradation and waveform distortion after Trojan activation.  

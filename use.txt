@@ -1,0 +1,10 @@
+Intended Use:
+- This artifact is provided to reproduce the experimental claims of the ACSAC 2025 paper
+  "Environmental Rate Manipulation Attacks on Power Grid Security."
+- The models are intended for academic research and educational purposes only.
+
+Limitations:
+- Requires proprietary software (MATLAB/Simulink, ETAP).
+- Simulations must be run manually due to GUI dependencies.
+- ETAP requires a commercial license and cannot be redistributed.
+- Results may differ slightly depending on software versions and local configurations.

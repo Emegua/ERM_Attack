@@ -1,0 +1,6 @@
+***
+* Sine waveform
+***
+.subckt sinew out
+V1 out 0 SINE({dc} {A} {f} 0 0 {phi})
+.ends sinew
