@@ -4,4 +4,7 @@ Paper Reference: Section 6.3.1
 Description:  
 Running the LTspice XVII model `artifact/LTspice/DC-AC.asc` reproduces the circuit-level inverter disruptions caused by the ERM-triggered Trojan.  
 Expected Behavior:  
-  - Observe voltage degradation and waveform distortion after Trojan activation.  
+  - Observe voltage degradation and waveform distortion in half of the output cycle after Trojan activation.  
+Running the LTspice XVII model `artifact/LTspice/DC-DC.asc` reproduces the circuit-level converter disruptions caused by the ERM-triggered Trojan.  
+Expected Behavior:  
+  - Observe voltage degradation and waveform distortion after Trojan activation.

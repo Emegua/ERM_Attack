@@ -56,12 +56,14 @@ use.txt # Intended use + limitations
   - Download: <https://etap.com>  
 
 **Supported Platforms**  
-- Windows 10/11  
+- Windows 10/11  - 64 bit
 - macOS (for LTspice and MATLAB only)  
 - ETAP is Windows-only  
 
 **Hardware Requirements**  
-- Standard workstation or laptop; no special hardware required.  
+- 40 GB Hard Disk Storage
+- 8 GB Memory
+- Intel Core i5 or better / 3.0 GHz or better
 
 ---
 
@@ -73,7 +75,8 @@ It is **not possible to fully automate execution** (e.g., via `run.sh`) because 
 ### LTspice
 1. Install LTspice XVII.  
 2. Navigate to `artifact/LTspice/`.  
-3. Open `DC-AC.asc` in LTspice and run the simulation.  
+3. Open `DC-AC.asc` in LTspice and run the simulation.
+4. View result at node "Vout". HT is trigger at t=50 ms.
 
 ### Simulink
 1. Install MATLAB R2023b with Simulink.  
@@ -113,3 +116,5 @@ See `license.txt` for licensing terms.
 See `use.txt` for intended use and limitations.  
 
 ---
+
+
